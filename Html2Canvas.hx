@@ -1,25 +1,38 @@
-package js.html2canvas;
+package jp.okawa.js.html2canvas;
 
+import js.Promise;
 import js.html.Element;
+import js.html.CanvasElement;
 
-@:expose('html2canvas')
-class Html2Canvas {
+typedef Options = {
 
-	public static function html2canvas(element:Element,options:{
-		?allowTaint:Bool,
-		?background:String,
-		?height    :Float,
-		?letterRendering:Bool,
-		?logging   :Bool,
-		?proxy     :Bool,
-		?svgRendering:Bool,
-		?taintTest :Bool,
-		?timeout   :Float,
-		?useCORS   :Bool,
-		?width     :Float,
-		?onrendered:Dynamic
-	}):Void {
+	?async:Bool,
+	?allowTaint:Bool,
+	?backgroundColor:String,
+	?canvas:CanvasElement,
+	?foreignObjectRendering:Bool,
+	?imageTimeout:Int,
+	?ignoreElements:Element->Bool,
+	?logging:Bool,
+	?onclone:Void->Void,
+	?proxy:Bool,
+	?removeContainer:Bool,
+	?scale:Float,
+	?useCORS:Bool,
+	?width:Float,
+	?height:Float,
+	?x:Float,
+	?y:Float,
+	?scrollX:Float,
+	?scrollY:Float,
+	?windowWidth:Float,
+	?windowHeight:Float
 
-	}
+}
+
+@:native('window')
+extern class Html2Canvas {
+
+	public static function html2canvas(element:Element,?options:Options):Promise<CanvasElement>;
 
 }
