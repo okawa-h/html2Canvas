@@ -1,4 +1,4 @@
-package jp.okawa.js.html2canvas;
+package js.html2canvas;
 
 import js.Promise;
 import js.html.Element;
