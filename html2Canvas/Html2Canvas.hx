@@ -1,12 +1,10 @@
-package js.html2canvas;
+package html2canvas;
 
 import js.Promise;
 import js.html.Element;
 import js.html.CanvasElement;
 
 typedef Options = {
-
-	?async:Bool,
 	?allowTaint:Bool,
 	?backgroundColor:String,
 	?canvas:CanvasElement,
@@ -27,7 +25,6 @@ typedef Options = {
 	?scrollY:Float,
 	?windowWidth:Float,
 	?windowHeight:Float
-
 }
 
 @:native('window')
