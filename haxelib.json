@@ -1,0 +1,10 @@
+{
+	"name": "html2Canvas-extern",
+	"url" : "https://github.com/okawa-h/html2Canvas-extern/",
+	"license": "MIT",
+	"tags": ["extern", "javascript", "js", "html2canvas"],
+	"description": "Externs for html2Canvas",
+	"version": "0.1.0",
+	"releasenote": "🎉 first",
+	"contributors": ["okawa-h"]
+}

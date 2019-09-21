@@ -30,6 +30,6 @@ typedef Options = {
 @:native('window')
 extern class Html2Canvas {
 
-	public static function html2canvas(element:Element,?options:Options):Promise<CanvasElement>;
+	public static function html2canvas(element:Element, ?options:Options):Promise<CanvasElement>;
 
 }
